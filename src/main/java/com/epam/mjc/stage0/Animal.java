@@ -39,7 +39,10 @@ public class Animal {
     }
 
     public String getDescription(){
-        String str = "This animal is mostly "+color+". It has "+numberOfPaws+" paws and ";
+        String str = "This animal is mostly "+color+". It has "+numberOfPaws;
+        if (numberOfPaws==1) str+=" paw and ";
+        else str+=" paws and ";
+
         if (hasFur) str+="a fur.";
         else str+="no fur.";
         return str;
