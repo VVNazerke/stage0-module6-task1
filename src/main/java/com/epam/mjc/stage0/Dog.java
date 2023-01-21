@@ -12,13 +12,7 @@ public class Dog extends Animal{
 
     @Override
     public String getDescription(){
-        String str = "This animal is mostly "+getColor()+". It has "+getNumberOfPaws();
-        if (getNumberOfPaws()==1) str+=" paw and ";
-        else str+=" paws and ";
-
-        if (isHasFur()) str+="a fur.";
-        else str+="no fur.";
-        return str;
+        return super.getDescription();
     }
 
 
