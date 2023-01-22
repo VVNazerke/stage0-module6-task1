@@ -14,30 +14,6 @@ public class Animal {
 
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public int getNumberOfPaws() {
-        return numberOfPaws;
-    }
-
-    public void setNumberOfPaws(int numberOfPaws) {
-        this.numberOfPaws = numberOfPaws;
-    }
-
-    public boolean isHasFur() {
-        return hasFur;
-    }
-
-    public void setHasFur(boolean hasFur) {
-        this.hasFur = hasFur;
-    }
-
     public String getDescription(){
         String str = "This animal is mostly "+color+". It has "+numberOfPaws;
         if (numberOfPaws==1) str+=" paw and ";
